@@ -1,0 +1,28 @@
+{
+  "name": "@jiki/highlightjs-javascript",
+  "module": "dist/javascript.ts",
+  "main": "dist/javascript.js",
+  "types": "dist/javascript.d.ts",
+  "type": "module",
+  "version": "0.0.1",
+  "author": {
+    "name": "Jeremy Walker"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "prepublishOnly": "bun build --minify src/javascript.ts --outdir dist",
+    "build": "bun build --minify src/javascript.ts --outdir dist",
+    "test": "bun test"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/highlight.js": "^10.1.0",
+    "highlight.js": "^11.10.0",
+    "vite": "^5.4.11"
+  },
+  "peerDependencies": {
+    "typescript": "^5.4.5"
+  }
+}
