@@ -1,9 +1,15 @@
 {
   "name": "@jiki/highlightjs-javascript",
-  "module": "dist/javascript.ts",
   "main": "dist/javascript.js",
+  "module": "dist/javascript.js",
   "types": "dist/javascript.d.ts",
   "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/javascript.d.ts",
+      "default": "./dist/javascript.js"
+    }
+  },
   "version": "0.0.1",
   "author": {
     "name": "Jeremy Walker"
